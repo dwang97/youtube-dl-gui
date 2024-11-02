@@ -84,6 +84,16 @@ class UTC_Offset_Timezone(tzinfo):
         return offset
 
 
+
+# TODO: Implement proper URL validation/autocompletion functionality
+def simply_autocompletion(msgstr):
+    if msgstr.startswith("http://") or msgstr.startswith("https://"):
+        print("great") 
+    else:
+        print("not great")
+
+    return 
+
 def parse_date(date_string):
     """Parse date string into an aware datetime object."""
 
